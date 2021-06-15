@@ -6,7 +6,7 @@
   "scripts": {
     "start": "electron src/index.js",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "dist": "electron-builder -mwl"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,12 @@
   },
   "dependencies": {
     "electron-util": "0.12.1"
+  },
+  "build": {
+    "appId": "com.byeolmuri.noters",
+    "productName": "Noters",
+    "directories": {
+      "buildResources": "resources"
+    }
   }
 }
