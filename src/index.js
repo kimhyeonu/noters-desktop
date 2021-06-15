@@ -1,4 +1,5 @@
 const { app, BrowserWindow } = require('electron');
+const { is } = require('electron-util');
 
 // 가비지 컬렉션을 피하기 위해 윈도우 객체를 변수로 선언한다.
 let window;
@@ -13,6 +14,10 @@ function createWindow() {
   });
 
   window.loadFile('index.html');
+
+  if (is.development) {
+    window.webContents.openDevTools();
+  }
 
   window.on('closed', () => {
     window = null;
