@@ -1,0 +1,29 @@
+{
+  "name": "noters-desktop",
+  "version": "0.1.0",
+  "description": "노터스(Noters)는 실시간 노트 공유 플랫폼입니다. 이 프로젝트는 노터스의 데스크탑 버전입니다.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron src/index.js",
+    "final": "electron final/index.js",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javascripteverywhere/desktop.git"
+  },
+  "author": "kimhyeonu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/javascripteverywhere/desktop/issues"
+  },
+  "homepage": "https://jseverywhere.io",
+  "devDependencies": {
+    "electron": "6.0.0",
+    "electron-builder": "21.2.0"
+  },
+  "dependencies": {
+    "electron-util": "0.12.1"
+  }
+}
